@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   # Máquina virtual DNSA
   config.vm.define "DNSA" do |dnsa|
-    dnsa.vm.box = "ubuntu/focal64"  # Usa Ubuntu 20.04 como base
+    dnsa.vm.box = "ubuntu/focal64"
     dnsa.vm.hostname = "DNSA"
     dnsa.vm.network "private_network", ip: "192.168.57.11"
     dnsa.vm.provider "virtualbox" do |vb|
